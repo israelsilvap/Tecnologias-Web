@@ -1,0 +1,133 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container geral */
+  .container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    background: url('../img/fundo.jpg') no-repeat center center;
+    background-attachment: fixed; 
+  }
+  
+  /* Cabeçalho fixo */
+  header {
+    background-color: #00274D; /* Azul marinho escuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    position: relative;
+    right: 12%;
+}
+  
+  .add-task-btn {
+    position: absolute;
+    background-color: #fff;
+    color: #00274D; /* Azul marinho escuro */
+    border: 2px solid #00274D;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 80%;
+    border-radius: 4px;
+    right: 5%;
+  }
+  
+  .add-task-btn:hover {
+    background-color: #00274D; /* Azul marinho escuro */
+    color: white;
+    border-color: white;
+  }
+  
+  /* Barra lateral (agora à direita) */
+  aside {
+    width: 17%;
+    background-color: #00274d6a; /* Tom claro para contraste com azul */
+    position: fixed;
+    top: 60px;
+    right: 0; /* Ajuste para ancorar à direita */
+    bottom: 0;
+    padding: 20px;
+  }
+  
+  aside nav ul {
+    list-style-type: none;
+  }
+  
+  aside nav ul li {
+    margin: 10px 0;
+  }
+  
+  aside nav ul li a {
+    text-decoration: none;
+    color: white; /* Azul marinho escuro */
+    font-size: 18px;
+  }
+  
+  aside nav ul li a:hover {
+    color: #00509E; /* Tom de azul mais vibrante */
+  }
+  
+  /* Área principal */
+  main {
+    margin-right: 220px; /* Ajustado para dar espaço para a barra lateral à direita */
+    padding: 80px 12% 20px 12%;
+    flex: 1;
+    }
+  
+  /* Estilo para as tarefas */
+  .task {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    background-color: white; /* Certifica-se de que o fundo seja visível */
+    transition: box-shadow 0.3s ease; /* Animação suave para hover */
+  }
+  
+  .task:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.574); /* Aumenta a sombra ao passar o mouse */
+  }
+  
+  
+  .high-priority {
+    background-color: #FFD2D2; /* Vermelho claro */
+    border-left: 5px solid #FF0000; /* Vermelho para alta prioridade */
+  }
+  
+  .medium-priority {
+    background-color: #FFEFD1; /* Amarelo claro */
+    border-left: 5px solid #FFA500; /* Laranja para prioridade média */
+  }
+  
+  .low-priority {
+    background-color: #e6ffe6; 
+    border-left: 5px solid green; 
+  }
+  
+  .task h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .task p {
+    font-size: 14px;
+    color: #555;
+  }
+  
