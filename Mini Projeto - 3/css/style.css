@@ -1,8 +1,8 @@
 /* Resetando alguns estilos padrões */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -52,13 +52,13 @@ header h1 {
 
 /* Barra lateral */
 aside {
-  width: 17%;
-  background-color: #00274d6a; 
+  width: 250px;
+  background-color: #00274d6a;
   position: fixed;
-  top: 60px;
-  right: 0; 
+  top: 75px;
+  right: 0;
   bottom: 0;
-  padding: 20px;
+  padding: 0px;
 }
 
 aside nav ul {
@@ -66,17 +66,31 @@ aside nav ul {
 }
 
 aside nav ul li {
-  margin: 10px 0;
+  margin: 10px 0px;
+  display: block;
+  padding: 0px 0px 0px 12px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 aside nav ul li a {
   text-decoration: none;
-  color: white; 
+  color: white;
   font-size: 18px;
+  padding: 20px;
 }
 
 aside nav ul li a:hover {
   color: #ebaf36; 
+}
+
+#pag {
+  background-color: #ebaf36;
+}
+
+#pag a:hover{
+  color: white; 
 }
 
 /* Área principal */
@@ -134,4 +148,3 @@ main {
   font-size: 14px;
   color: #555;
 }
-  
