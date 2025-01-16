@@ -1,0 +1,105 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+    color: #5dade2;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.input-group {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-around;
+}
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 90px;
+}
+.input-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.input-row input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+.button {
+    background: #5dade2;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, color 0.3s;
+}
+.button:hover {
+    background: #fff;
+    color: #5dade2;
+    transform: scale(1.05);
+    border: 1px solid #5dade2;
+}
+.list {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    transition: background 0.3s, transform 0.3s, color 0.3s;
+}
+.list-item:hover {
+    background: #5dade2;
+    color: #fff;
+    transform: scale(1.02);
+}
+.list-item:hover .button {
+    background: #fff;
+    color: #5dade2;
+    border: 1px solid #5dade2;
+}
+.list-item .button {
+    background: #5dade2;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, color 0.3s;
+}
+.hidden {
+    display: none;
+}
+
+

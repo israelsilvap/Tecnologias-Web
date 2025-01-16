@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorpTech - Gerenciamento de Presença</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Presença - CorpTech</h1>
+
+        <div class="input-group">
+            <div class="input-row">
+                <label for="search">Buscar Colaborador:</label>
+                <input type="text" id="search" placeholder="Digite o nome do colaborador">
+                <button class="button" id="clear-search"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div class="input-row">
+                <label for="add-collaborator">Adicionar Colaborador:</label>
+                <input type="text" id="add-collaborator" placeholder="Digite o nome do novo colaborador">
+                <button class="button" id="add-button"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+
+        <ul class="list" id="collaborator-list">
+        </ul>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
